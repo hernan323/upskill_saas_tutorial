@@ -16,10 +16,13 @@
  
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+//topography styles 
 h1, h2, h3 {
     font-family: 'Open sans', sans-serif;
 }
 
+// Brackgroung Gradient
 .navbar, .home-callout {
   // gradient provided by uigradient
   background: #159957;  /* fallback for old browsers */
@@ -30,29 +33,22 @@ background: linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safar
 
 }
 
+
+//Nav styles 
 .navbar {
   border:none;
 }
 
-.navbar-default .navbar-brand {
-  color: white;
-}
-
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color:white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-
+// Home page styles 
 .home-callout {
   color:white;
   margin-top: -20px;
